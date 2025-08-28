@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/widgetsRootLayout" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WidgetsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Preferencias de Notificación:"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/cbEmailNotifications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recibir notificaciones por email"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/cbPushNotifications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recibir notificaciones push"
+            android:checked="true" 
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Modo Oscuro:"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp" />
+
+        <Switch
+            android:id="@+id/swDarkMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activar Modo Oscuro"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selecciona tu género:"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp" />
+
+        <RadioGroup
+            android:id="@+id/rgGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <RadioButton
+                android:id="@+id/rbMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Masculino" />
+
+            <RadioButton
+                android:id="@+id/rbFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Femenino"
+                android:layout_marginStart="16dp" />
+
+            <RadioButton
+                android:id="@+id/rbOther"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Otro"
+                android:layout_marginStart="16dp" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnShowWidgetStates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mostrar Estados de Widgets"
+            android:layout_marginTop="24dp" />
+
+        <TextView
+            android:id="@+id/tvWidgetStates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estados actuales de los widgets..."
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/btnGoToMainFromWidgets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Volver al Menú Principal"
+            android:layout_marginTop="32dp" />
+
+    </LinearLayout>
+</ScrollView>
