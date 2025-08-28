@@ -31,29 +31,6 @@
         android:text="Mostrar Icono Información"
         android:layout_marginBottom="16dp"/>
 
-    <!-- VideoView y elementos relacionados eliminados -->
-    <!-- 
-    <VideoView
-        android:id="@+id/vvDisplayVideo"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_marginBottom="16dp" />
-        
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="(Para VideoView, necesitarás un video en res/raw y permisos si es de internet)"
-        android:textSize="12sp"
-        android:layout_marginBottom="16dp"/>
-
-    <Button
-        android:id="@+id/btnPlayVideo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Reproducir Video de Ejemplo (si está configurado)"
-        android:layout_marginBottom="24dp"/>
-    -->
-
     <Button
         android:id="@+id/btnGoToMainFromMedia"
         android:layout_width="wrap_content"
